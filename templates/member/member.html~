@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>UAAcm Member</title>
+</head>
+<body>
+  {% include "member/member_head.html" %}
+
+  <p> {{member.fname}} {{member.lname}} </p>
+  <p> major: {{member.major}} </p>
+  <p> pic: <img alt="trouble Viewing" src="{{member.pic}}"/> {{member.pic}} </p>
+  <p> Links: {{member.links}} </p>
+  <p> bio:   {{member.bio}}  </p>
+
+</body>
+</html>

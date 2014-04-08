@@ -4,11 +4,11 @@
 
 #logo	   {float:left;height:155px;width:170px;}
 
-#header    {border-style:outset; border-color:Blue; background-color:#0099FF; margin-left:170px; height:155px; text-align:center;}
+#header    {border-style:outset; border-color:#0099FF; background-color:#0099FF; margin-left:160px; height:155px; text-align:center;}
 
 h1	   {margin-bottom:0; text-align:center;}
 
-#links	   {border-style:outset; border-color:Blue; background-color:#0099FF; height:800px; width:165px; float:left;}
+#links	   {border-style:outset; border-color:#0099FF; background-color:#0099FF; height:800px; width:155px; float:left;}
 
 #content   {background-color: White; height:800px;}
 
@@ -25,4 +25,32 @@ ul	   {text-align:center;}
 ol	   {text-align:center;}
 #container #content iframe {
 	text-align: center;
+}
+#viewCount {
+    text-align:center;
+    background-color:Grey;
+    clear:both;
+}
+body {
+    margin: 0;
+    background-color:#0099FF;
+}
+#roster-edit {
+    float: left;
+margin-left: 165px;
+position: absolute;
+width: 75%;
+padding-top: 5%;
+padding-left: 5%;
+border-style: solid;
+border-color: white;
+border-width: 15px;
+border-radius: 30px;
+}
+
+#roster_edit_form {
+    padding:10%;
+}
+#content-frame{
+    overflow:hidden;
 }

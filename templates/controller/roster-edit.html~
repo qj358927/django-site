@@ -1,0 +1,27 @@
+<html>
+
+<head>
+	<title>Edit Members</title>
+</head>
+
+<body>
+  <div id="body">
+	{% include 'controller/header.html' %}
+      <div id="content-frame">
+	{% include 'controller/sidebar.html' %}
+	<div id="roster-edit">
+	  <form id="roster_edit_form" method="GET">
+	    First Name: <input type="text" name="firstname"/><br>
+	    Last Name:  <input type="text" name="lastname"> <br>
+	    <input type="submit" name="roster_edit_submit" value="submit"/>
+	  </form>
+	{% if hasname == 1 %}
+	   <p> {{lastname}}
+	    {{firstname}}</p>
+	{% endif%}
+	</div>
+	 
+      </div><!--end of content frame -->
+    </div><!--end of body div-->
+</body>
+</html>

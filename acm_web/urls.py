@@ -7,7 +7,10 @@ from django.conf.urls.defaults import patterns, include, url
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'controller.views.home', name='home'),
-    url(r'.*[.]html$', 'controller.views.page', name='page')
+    url(r'.*[.]html$', 'controller.views.page', name='page'),
+    url(r'^test','controller.views.test', name='test'),
+    url(r'^member_create','member.views.member_create',name='member_create'),
+    url(r'^member_random','member.views.member',name='member_random')
     # url(r'^httpdocs/', include('httpdocs.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

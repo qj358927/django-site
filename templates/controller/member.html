@@ -1,0 +1,23 @@
+<html>
+
+<head>
+	<title>Edit Members</title>
+</head>
+
+<body>
+  <div id="body">
+	{% include 'controller/header.html' %}
+      <div id="content-frame">
+	{% include 'controller/sidebar.html' %}
+	<div id="roster-edit">
+	  <form id="roster_edit_form" method="post" action="controller/member/">{% csrf_token %}
+	    {{ form.as_p }}
+	    <input type="submit" name="roster_edit_submit" value="Submit"/>
+	  </form>
+	
+	</div>
+	 
+      </div><!--end of content frame -->
+    </div><!--end of body div-->
+</body>
+</html>
